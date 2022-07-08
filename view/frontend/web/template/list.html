@@ -1,0 +1,21 @@
+<button name="listcoupon" type="button" class="available-coupon action primary">
+    <span translate="'Show Available Coupons'"></span>
+</button>
+
+<div data-bind="afterRender: setModalElement" style="display: none">
+    <div class="content">
+        <!-- ko foreach: couponList -->
+        <div class="coupon-section">
+            <p class="rule-name" text="$data.name"></p>
+            <p>
+                <span translate="'Use Promo code '"></span>
+                <span class="coupon-code" text="$data.code"></span>
+                <span translate="'at checkout'"></span>
+            </p>
+            <button name="applycoupon" type="button" click="$parent.applycoupon" class="applycoupon">
+                <span translate="'Apply Coupon'"></span>
+            </button>
+        </div>
+        <!-- /ko -->
+    </div>
+</div>

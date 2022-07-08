@@ -1,0 +1,17 @@
+<?php
+use Magento\Framework\View\Element\Template;
+
+/**
+ * @var Template $block
+ */
+?>
+<div class="couponlist" data-bind="scope: 'couponlist'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+<script type="text/x-magento-init">
+{
+    "*": {
+        "Magento_Ui/js/core/app": <?= /* @noEscape */ $block->getJsLayout(); ?>
+    }
+}
+</script>
