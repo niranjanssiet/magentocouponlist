@@ -46,8 +46,6 @@ Now the module will install under the **/vendor/magento/module-couponlist/** fol
 
 		php bin/magento module:status 
             
-	You can view the list of the modules available in your Magento along with the SupplierPortal module is in **disabled mode**.
-
 
 	Enable the module, upgrade schema and flush cache using the commands below.
   
