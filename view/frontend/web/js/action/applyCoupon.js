@@ -10,7 +10,6 @@ define([
 
     var couponCodeElement = '#coupon_code';
     var couponForm = '#discount-coupon-form';
-    var removeCouponElement = '#remove-coupon';
 
     return function (couponCode){
         var hash = window.location.hash
@@ -25,7 +24,6 @@ define([
         }
         /** Cart Page **/
         else {
-            $(removeCouponElement).remove();
             $(couponCodeElement).removeAttr('disabled');
             $(couponCodeElement).val(couponCode);
             $(couponForm).trigger('submit');
