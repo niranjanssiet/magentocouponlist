@@ -56,5 +56,5 @@ php bin/magento cache:flush
 		
 # How it works
 
-![How it works](https://drive.google.com/file/d/1zmUXGhY6DEzDJe9nQaX3hlCp_sQ8dx0K/view)
+![How it works](https://i.ibb.co/zfd0mNH/couponlist.gif)
 
