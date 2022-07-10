@@ -23,13 +23,13 @@ There are two ways to install the module in  Magento. Composer way (**Recommende
 **Method 1:**
 
 
-	Open command prompt and navigate to the Magento root directory where the composer.json file is placed. Run the below commands.
+Open command prompt and navigate to the Magento root directory where the composer.json file is placed. Run the below commands.
   
-		composer config repositories.couponlist vcs https://github.com/niranjanssiet/magentocouponlist
+composer config repositories.couponlist vcs https://github.com/niranjanssiet/magentocouponlist
   
-		composer config -g github-oauth.github.com < Get GitHub oauth token >
+composer config -g github-oauth.github.com < Get GitHub oauth token >
   
-		composer require magento/module-couponlist:versionnumber
+composer require magento/module-couponlist:versionnumber
 
 
 After composer installation, open command prompt and navigate to the Magento root  directory where the composer.json file is placed.
@@ -38,20 +38,23 @@ Run **composer install**, if composer is being executed for the first time, else
 
 Now the module will install under the **/vendor/magento/module-couponlist/** folder as per the composer.json configuration.
 
- 
-         
+          
 # How to enable the Module in Magento:
           
-	Open Command prompt and navigate to the Magento root directory and run the below commands,   
+Open Command prompt and navigate to the Magento root directory and run the below commands,   
 
-		php bin/magento module:status 
+php bin/magento module:status 
             
 
-	Enable the module, upgrade schema and flush cache using the commands below.
+Enable the module, upgrade schema and flush cache using the commands below.
   
-		php bin/magento module:enable Magento_CouponList
+php bin/magento module:enable Magento_CouponList
              
-		php bin/magento setup:upgrade 
+php bin/magento setup:upgrade 
             
-		php bin/magento cache:flush
+php bin/magento cache:flush
+		
+# How it works
+
+![How it works](https://drive.google.com/file/d/1zmUXGhY6DEzDJe9nQaX3hlCp_sQ8dx0K/view)
 
