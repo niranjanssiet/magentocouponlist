@@ -10,7 +10,6 @@ This repository has CouponList module
 
 The Coupon List module can be installed with [Composer](https://getcomposer.org/). 
 
-There are two ways to install the module in  Magento. Composer way (**Recommended**) and the other one is manual installation.
 
 # Pre-Condition for installation using Composer:
 
@@ -32,7 +31,13 @@ composer config -g github-oauth.github.com < Get GitHub oauth token >
   
 composer require magento/module-couponlist:versionnumber
 
+or 
 
+composer require magento/module-couponlist:dev-master
+
+```
+
+```
 After composer installation, open command prompt and navigate to the Magento root  directory where the composer.json file is placed.
          
 Run **composer install**, if composer is being executed for the first time, else **composer update**.
@@ -46,11 +51,6 @@ Now the module will install under the **/vendor/magento/module-couponlist/** fol
 ```
         
 Open Command prompt and navigate to the Magento root directory and run the below commands,   
-
-php bin/magento module:status 
-            
-
-Enable the module, upgrade schema and flush cache using the commands below.
   
 php bin/magento module:enable Magento_CouponList
              
