@@ -1,0 +1,29 @@
+.couponpopup {
+  .coupon-section {
+    padding: 10px;
+    border-bottom: 1px solid @color-gray-light2;
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    }
+    .rule-name, .coupon-code{
+      font-weight: bold;
+    }
+  }
+}
+//Desktop
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+  .couponlist{
+    float: left;
+    clear: left;
+    margin-top: -40px;
+  }
+}
+
+//Mobile Screen
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+  .couponlist{
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+}

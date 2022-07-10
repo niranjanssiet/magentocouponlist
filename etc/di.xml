@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\CouponList\Api\CouponListManagementInterface" type="Magento\CouponList\Model\CouponListManagement" />
+    <preference for="Magento\CouponList\Api\ValidateCouponInterface" type="Magento\CouponList\Model\ValidateCoupon" />
+    <type name="Magento\CouponList\Model\ValidateCoupon">
+        <arguments>
+            <argument name="validatorPool" xsi:type="array">
+                <item name="checkIsActiveCoupon" xsi:type="object">Magento\CouponList\Model\Validate\IsCouponActive</item>
+                <item name="checkCouponAssignedToWebsite" xsi:type="object">Magento\CouponList\Model\Validate\CouponAssignedToWebsite</item>
+                <item name="checkCouponAssignedToCustomerGroup" xsi:type="object">Magento\CouponList\Model\Validate\CouponAssignedToCustomerGroup</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
